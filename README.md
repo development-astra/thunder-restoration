@@ -1,7 +1,7 @@
 
 # thunder-restoration – Landing Pages
 
-This repository contains three static landing pages for **Atlas Insulation**, developed by the **Astra Development Team**.  
+This repository contains three static landing pages for **Thunder REstoration**, developed by the **Astra Development Team**.  
 Each page is designed to highlight a specific service with a clean UI and responsive layout.
 
 ---
