@@ -2355,7 +2355,8 @@ form button.btn:hover {
 }
 
 .testimonials h2 {
-  font-size: 72px !important;
+  font-size: 68px !important;
+  text-align: center;
 }
 
 .testimonials h1 {
