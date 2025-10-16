@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $service = trim($_POST['service'] ?? '');
 
     if (!$name || !$email || !$phone || !$service) {
-        header("Location: https://www.iluxdc.com/form-error.html");
+        header("Location: https://thundermoldremediation.com/mold-remediation/form-error.html");
         exit;
     }
 
@@ -24,22 +24,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        // $mail->Username   = 'aquapropc@gmail.com';
-        // $mail->Password   = 'vmxgpykbazkwakhg';
-        
-        $mail->Username   = 'aquaprolpleads@gmail.com';
-        $mail->Password   = 'iubemfjobpwhwhua';
+        $mail->Username   = 'thunderrleads@gmail.com';
+        $mail->Password   = 'zflhesrnuqbeqncc';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port       = 465;
 
         // From & To
-        $mail->setFrom('aquaprolpleads@gmail.com', 'Thunder Restoration');
+        $mail->setFrom('thunderrleads@gmail.com', 'Thunder Restoration');
         $mail->addAddress('info@thunder-restoration.com');
 
         // Add CC recipients
         $mail->addCC('harry@astraresults.com');
         $mail->addCC('development@astraresults.com');
-        
         $mail->addCC('joseph@astraresults.com');
 
         // Content
@@ -55,15 +51,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $mail->send();
 
-        header("Location: https://www.iluxdc.com/thank-you.html");
+        header("Location: https://thundermoldremediation.com/mold-remediation/thank-you.html");
         exit;
 
     } catch (Exception $e) {
-        header("Location: https://www.iluxdc.com/form-error.html");
+        header("Location: https://thundermoldremediation.com/mold-remediation/form-error.html");
         exit;
     }
 
 } else {
-    header("Location: https://www.iluxdc.com/form-error.html");
+    header("Location: https://thundermoldremediation.com/mold-remediation/form-error.html");
     exit;
 }
