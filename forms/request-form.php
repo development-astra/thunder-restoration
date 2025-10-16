@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $service = trim($_POST['service'] ?? '');
 
     if (!$name || !$email || !$phone || !$service) {
-        header("Location: /form-error.html");
+        header("Location: https://www.iluxdc.com/form-error.html");
         exit;
     }
 
@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // From & To
         $mail->setFrom('aquaprolpleads@gmail.com', 'Thunder Restoration');
-        $mail->addAddress('aquaprolpleads@gmail.com');
+        $mail->addAddress('info@thunder-restoration.com');
 
         // Add CC recipients
         $mail->addCC('harry@astraresults.com');
@@ -55,15 +55,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $mail->send();
 
-        header("Location: https://aquapropc.com/aquapro-lp/thank-you.html");
+        header("Location: https://www.iluxdc.com/thank-you.html");
         exit;
 
     } catch (Exception $e) {
-        header("Location: https://aquapropc.com/aquapro-lp/form-error.html");
+        header("Location: https://www.iluxdc.com/form-error.html");
         exit;
     }
 
 } else {
-    header("Location: https://aquapropc.com/aquapro-lp/form-error.html");
+    header("Location: https://www.iluxdc.com/form-error.html");
     exit;
 }
