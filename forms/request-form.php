@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $service = trim($_POST['service'] ?? '');
 
     if (!$name || !$email || !$phone || !$service) {
-        header("Location: https://aquapropc.com/aquapro-lp/form-error.html");
+        header("Location: /form-error.html");
         exit;
     }
 
@@ -28,12 +28,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // $mail->Password   = 'vmxgpykbazkwakhg';
         
         $mail->Username   = 'aquaprolpleads@gmail.com';
-        $mail->Password   = 'iubemfjobpwhwhua';
+        $mail->Password   = 'iubemfjobpwhwhua-';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port       = 465;
 
         // From & To
-        $mail->setFrom('aquaprolpleads@gmail.com', 'Aqua Pro');
+        $mail->setFrom('aquaprolpleads@gmail.com', 'Thunder Restoration');
         $mail->addAddress('aquaprolpleads@gmail.com');
 
         // Add CC recipients
