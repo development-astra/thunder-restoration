@@ -1,0 +1,43 @@
+[17-Oct-2025 02:30:51 Europe/Berlin] Using DEV fallback app password (set GMAIL_APP_PASSWORD env to remove this message).
+[17-Oct-2025 02:30:52 Europe/Berlin] PHPMailer Exception: SMTP Error: Could not connect to SMTP host. Connection failed. stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed
+[17-Oct-2025 02:30:52 Europe/Berlin] PHPMailer ErrorInfo: SMTP Error: Could not connect to SMTP host. Connection failed. stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failedSMTP server error: QUIT command failed Detail: `GÙç	>¯&lp§ çÙ[y±íaé´
+[17-Oct-2025 02:32:40 Europe/Berlin] PHPMailer Exception: SMTP Error: Could not connect to SMTP host. Connection failed. stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed
+[17-Oct-2025 02:32:40 Europe/Berlin] PHPMailer ErrorInfo: SMTP Error: Could not connect to SMTP host. Connection failed. stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failedSMTP server error: QUIT command failed Detail: `ÅzWzm%‰h+ÛÊíMˆ[≥Ñ√ÔfÄ<ŸÑîÜÔrÀ}‹·ÄFGÖd=2b“˝œ˜pKËËÛ—‰°ßÓìàBíœtCD
+[17-Oct-2025 02:35:26 Europe/Berlin] POST_PAYLOAD: {"name":"John Doe","email":"john.doe@gmail.com","phone":"0000000000","service":"Mold Inspection"}
+[17-Oct-2025 02:35:26 Europe/Berlin] SMTP[1]: SMTP ERROR: Failed to connect to server:  (0)
+[17-Oct-2025 02:35:26 Europe/Berlin] SMTP[2]: SMTP Error: Could not connect to SMTP host. Failed to connect to server
+[17-Oct-2025 02:35:26 Europe/Berlin] PHPMailer Exception: SMTP Error: Could not connect to SMTP host. Failed to connect to server
+[17-Oct-2025 02:35:26 Europe/Berlin] PHPMailer ErrorInfo: SMTP Error: Could not connect to SMTP host. Failed to connect to serverSMTP server error: Failed to connect to server
+[17-Oct-2025 02:35:26 Europe/Berlin] FAIL_CODE: SMTP_EXCEPTION
+[17-Oct-2025 02:38:14 Europe/Berlin] SMTP[2]: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 98e67ed59e1d1-33bd7b52c28sm746716a91.22 - gsmtp
+
+[17-Oct-2025 02:38:14 Europe/Berlin] SMTP[1]: CLIENT -> SERVER: EHLO localhost
+
+[17-Oct-2025 02:38:14 Europe/Berlin] SMTP[2]: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [143.44.224.16]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250 SMTPUTF8
+
+[17-Oct-2025 02:38:14 Europe/Berlin] SMTP[1]: CLIENT -> SERVER: STARTTLS
+
+[17-Oct-2025 02:38:14 Europe/Berlin] SMTP[2]: SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+
+[17-Oct-2025 02:38:15 Europe/Berlin] SMTP[2]: SMTP Error: Could not connect to SMTP host. Connection failed. stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed
+[17-Oct-2025 02:38:15 Europe/Berlin] SMTP[1]: CLIENT -> SERVER: QUIT
+
+[17-Oct-2025 02:38:15 Europe/Berlin] SMTP[2]: SERVER -> CLIENT: 
+[17-Oct-2025 02:38:15 Europe/Berlin] SMTP[1]: SMTP ERROR: QUIT command failed: 
+[17-Oct-2025 02:38:15 Europe/Berlin] SMTP[2]: SMTP Error: Could not connect to SMTP host. Connection failed. stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed
+[17-Oct-2025 02:38:15 Europe/Berlin] PHPMailer Exception: SMTP Error: Could not connect to SMTP host. Connection failed. stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failed
+[17-Oct-2025 02:38:15 Europe/Berlin] PHPMailer ErrorInfo: SMTP Error: Could not connect to SMTP host. Connection failed. stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:0A000086:SSL routines::certificate verify failedSMTP server error: QUIT command failed

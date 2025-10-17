@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $service = trim($_POST['service'] ?? '');
 
     if (!$name || !$email || !$phone || !$service) {
-        header("Location: https://thundermoldremediation.com/mold-remediation/form-error.html");
+        header("Location: http://localhost/astraresults.com/thunder-restoration/form-error.html");
         exit;
     }
 
@@ -24,13 +24,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'thunderrleads@gmail.com';
-        $mail->Password   = 'zflhesrnuqbeqncc';
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-        $mail->Port       = 465;
+        $mail->Username   = 'harry@astraresults.com';
+        $mail->Password   = 'pzuhhxmmirtxsjry';
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port       = 587;
 
         // From & To
-        $mail->setFrom('thunderrleads@gmail.com', 'Thunder Restoration');
+        $mail->setFrom('harry@astraresults.com', 'Thunder Restoration');
         $mail->addAddress('info@thunder-restoration.com');
 
         // Add CC recipients
@@ -51,15 +51,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $mail->send();
 
-        header("Location: https://thundermoldremediation.com/mold-remediation/thank-you.html");
+        header("Location: http://localhost/astraresults.com/thunder-restoration/thank-you.html");
         exit;
 
     } catch (Exception $e) {
-        header("Location: https://thundermoldremediation.com/mold-remediation/form-error.html");
+        header("Location: http://localhost/astraresults.com/thunder-restoration/form-error.html");
         exit;
     }
 
 } else {
-    header("Location: https://thundermoldremediation.com/mold-remediation/form-error.html");
+    header("Location: http://localhost/astraresults.com/thunder-restoration/form-error.html");
     exit;
 }
