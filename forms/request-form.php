@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $service = trim($_POST['service'] ?? '');
 
     if (!$name || !$email || !$phone || !$service) {
-        header("Location: http://localhost/astraresults.com/thunder-restoration/form-error.html");
+        header("Location: https://thundermoldremediation.com/form-error.html");
         exit;
     }
 
@@ -31,10 +31,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // From & To
         $mail->setFrom('harry@astraresults.com', 'Thunder Restoration');
-        $mail->addAddress('info@thunder-restoration.com');
+        // $mail->addAddress('info@thunder-restoration.com');
+        $mail->addAddress('joseph@astraresults.com');
+        
 
         // Add CC recipients
-        $mail->addCC('harry@astraresults.com');
+        // $mail->addCC('harry@astraresults.com');
         $mail->addCC('development@astraresults.com');
         $mail->addCC('joseph@astraresults.com');
 
@@ -51,15 +53,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $mail->send();
 
-        header("Location: http://localhost/astraresults.com/thunder-restoration/thank-you.html");
+        header("Location: https://thundermoldremediation.com/thank-you.html");
         exit;
 
     } catch (Exception $e) {
-        header("Location: http://localhost/astraresults.com/thunder-restoration/form-error.html");
+        header("Location: https://thundermoldremediation.com//thunder-restoration/form-error.html");
         exit;
     }
 
 } else {
-    header("Location: http://localhost/astraresults.com/thunder-restoration/form-error.html");
+    header("Location: https://thundermoldremediation.com/form-error.html");
     exit;
 }
