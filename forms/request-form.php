@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $service = trim($_POST['service'] ?? '');
 
     if (!$name || !$email || !$phone || !$service) {
-        header("Location: https://thundermoldremediation.com/form-error.html");
+        header("Location: https://thundermoldremediation.com/mold-remediation/form-error.html");
         exit;
     }
 
@@ -53,15 +53,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $mail->send();
 
-        header("Location: https://thundermoldremediation.com/thank-you.html");
+        header("Location: https://thundermoldremediation.com/mold-remediation/thank-you.html");
         exit;
 
     } catch (Exception $e) {
-        header("Location: https://thundermoldremediation.com//thunder-restoration/form-error.html");
+        header("Location: https://thundermoldremediation.com//mold-remediation/form-error.html");
         exit;
     }
 
 } else {
-    header("Location: https://thundermoldremediation.com/form-error.html");
+    header("Location: https://thundermoldremediation.com/mold-remediation/form-error.html");
     exit;
 }
