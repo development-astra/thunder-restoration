@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->Port       = 587;
 
         // From & To
-        $mail->setFrom('harry@astraresults.com', 'Thunder Restoration');
+        $mail->setFrom('thunderrleads@gmail.com', 'Thunder Restoration');
         // $mail->addAddress('info@thunder-restoration.com');
         $mail->addAddress('joseph@astraresults.com');
         
@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Add CC recipients
         // $mail->addCC('harry@astraresults.com');
         $mail->addCC('development@astraresults.com');
-        $mail->addCC('joseph@astraresults.com');
+        // $mail->addCC('joseph@astraresults.com');
 
         // Content
         $mail->isHTML(true);
