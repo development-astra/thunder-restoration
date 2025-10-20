@@ -5,7 +5,7 @@ $(document).ready(function() {
         
         $.ajax({
             // change the URL to your actual endpoint
-            url: 'http://134.199.195.8:5000/    send_email/v1/thunder_restoration',
+            url: 'http://134.199.195.8:5000/send_email/v1/thunder_restoration',
             // url: 'https://0pbj0xnp-4848.asse.devtunnels.ms/send_email/v1/thunder_restoration',
             type: 'POST',
             data: $(this).serialize(),
