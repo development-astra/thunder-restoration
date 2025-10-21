@@ -1,13 +1,13 @@
 
-# thunder-restoration – Landing Pages
+# Thunder Restoration – Landing Page
 
-This repository contains three static landing pages for **Thunder REstoration**, developed by the **Astra Development Team**.  
+This repository contains three static landing pages for **Thunder Restoration**, developed by the **Astra Development Team**.  
 Each page is designed to highlight a specific service with a clean UI and responsive layout.
 
 ---
 
 ## 📄 Pages
-1. **Insulation Inspection**
+1. **Mold Remediation**
 
 ---
 
